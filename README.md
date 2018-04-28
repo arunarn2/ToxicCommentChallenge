@@ -16,6 +16,9 @@ For this project I used the **Stanford GloVe embeddings** downloaded from :
 **Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB download): glove.840B.300d.zip**  
 
 ## Models
+### Logistic Regression 
+
+
 ### Convolutional  
 
 
