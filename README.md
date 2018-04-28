@@ -1,5 +1,6 @@
 # ToxicCommentChallenge
-Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM with Max K Pooling.
+Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM with Max K Pooling.  
+Using dataset from Kaggle's [Jigsaw Toxic Comment Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
 
 ## Word Embeddings
 A word embedding is an approach to provide a dense vector representation of words that capture something about their meaning. It turns text into numbers and  helps building a low-dimensional vector representation from corpus of text, which preserves the contextual similarity of words.
