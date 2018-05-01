@@ -25,3 +25,17 @@ For this project I used the **Stanford GloVe embeddings** downloaded from :
 
 ### BiDirectional LSTM
 
+
+**Accuracy**
+```
+step:24000 Train Loss: 1.3490717, Train Accuracy: 0.9375
+step:24100 Train Loss: 1.1947979, Train Accuracy: 0.9609375
+step:24200 Train Loss: 1.4230306, Train Accuracy: 0.984375
+step:24300 Train Loss: 1.5326409, Train Accuracy: 0.953125
+step:24400 Train Loss: 1.3895309, Train Accuracy: 0.9765625
+step:24500 Train Loss: 1.2192655, Train Accuracy: 0.96875
+step:24600 Train Loss: 1.3316984, Train Accuracy: 0.9765625
+step:24700 Train Loss: 1.4945354, Train Accuracy: 0.9375
+step:24800 Train Loss: 1.2704673, Train Accuracy: 0.9765625
+step:24900 Train Loss: 1.2523654, Train Accuracy: 0.96875
+```
