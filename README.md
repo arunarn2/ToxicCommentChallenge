@@ -76,3 +76,8 @@ step:24900 Train Loss: 1.2523654, Train Accuracy: 0.97875
 Training complete
 Predictions complete
 ```
+
+
+### References
+[Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)  
+[LSTM by example using Tensorflow](https://towardsdatascience.com/lstm-by-example-using-tensorflow-feb0c1968537)  
