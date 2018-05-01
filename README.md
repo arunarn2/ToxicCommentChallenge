@@ -22,10 +22,22 @@ I have implemented 3 different models here using Python 2.7, Tensorflow 1.4, Sci
 Additionally I have also added a simple BiDirectional LSTM keras Model which gives similar accuracy.  
 
 ### Logistic Regression 
-
+```python
+CV score for class toxic is -0.141080425752
+CV score for class severe_toxic is -0.0297990227241
+CV score for class obscene is -0.0804189464205
+CV score for class threat is -0.0151034029795
+CV score for class insult is -0.0895439792452
+CV score for class identity_hate is -0.0330330762226
+Total CV score is -0.0648298088908
+```
 
 ### Convolutional Neural Network Model 
+Implemented [Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)  
 
+**Model Graph**  
+~[Convolutional for Sentence Classification](cnn.png)  
+  
 **Accuracy**
 ```
 Epoch:0 Train Loss: 0.09688197537347747, Train Accuracy: 0.9730627584610475
