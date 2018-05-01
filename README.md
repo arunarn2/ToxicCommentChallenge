@@ -25,7 +25,7 @@ For this project I used the **Stanford GloVe embeddings** downloaded from :
 
 ### BiDirectional LSTM
 **Model Graph**
-![BiDirectional LSTM Model](lstm.pn)
+![BiDirectional LSTM Model](lstm.png)
 
 **Accuracy**
 ```
