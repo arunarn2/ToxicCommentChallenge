@@ -36,7 +36,7 @@ Total CV score is -0.0648298088908
 Implemented [Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)  
 
 **Model Graph**  
-~[Convolutional for Sentence Classification](cnn.png)  
+![Convolutional for Sentence Classification](cnn.png)  
   
 **Accuracy**
 ```
