@@ -1,4 +1,5 @@
 # ToxicCommentChallenge
+## Identify and classify toxic online comments
 Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM with Max K Pooling.  
 Using dataset from Kaggle's [Jigsaw Toxic Comment Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
 
@@ -17,6 +18,9 @@ For this project I used the **Stanford GloVe embeddings** downloaded from :
 **Common Crawl (840B tokens, 2.2M vocab, cased, 300d vectors, 2.03 GB download): glove.840B.300d.zip**  
 
 ## Models
+I have implemented 3 different models here using Python 2.7, Tensorflow 1.4, SciPy, Numpy.  Accuracy from the models are shown below along with the network Architecture. 
+Additionally I have also added a simple BiDirectional LSTM keras Model which gives similar accuracy.  
+
 ### Logistic Regression 
 
 
