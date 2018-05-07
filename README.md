@@ -3,6 +3,18 @@
 Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM with Max K Pooling.  
 Using dataset from Kaggle's [Jigsaw Toxic Comment Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
 
+## Introduction
+A flood of content is produced on a daily basis throughout the Internet, on social media sites etc from the online interaction between users. While this situation contributes significantly to the quality of human life, unfortunately it involves enormous dangers, since online texts with high toxicity can cause personal attacks, online harassment and bullying behaviors Discussing things you care about can be difficult.   
+
+## Purpose
+The purpose of this project is to build models that best classifies the comments into the following categories: toxic, severe\_toxic, obscene, threat, insult, identify\_hate. 
+
+## Motivation
+Traditionally Recurrent Neural Networks are best known to work with text data and Convolutional Neural Networks with image processing.  Recently, Convolutional Neural Networks (CNN) are being applied to text classification or natural language processing both to distributed as to discrete embedding of words [1], without using syntactic or semantic knowledge of a language [3].  Also, a recurrent CNN model was proposed recently for text classification without human-designed features [2] by succeeding to outperform both the CNN model as well as other well-established classifiers.
+
+## Dataset 
+Data for this project are a large number of Wikipedia comments that is part of the Kaggle dataset. 
+
 ## Word Embeddings
 A word embedding is an approach to provide a dense vector representation of words that capture something about their meaning. It turns text into numbers and  helps building a low-dimensional vector representation from corpus of text, which preserves the contextual similarity of words.
 
