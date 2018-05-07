@@ -89,6 +89,12 @@ Training complete
 Predictions complete
 ```
 
+### Conclusion
+As shown CNN can outperform well established methodologies providing enough evidence that their use is appropriate for toxic comment classification. The promising results are motivating for further development of CNN based methodologies for text mining in the near future, in our interest, employing methods for adaptive learning and providing further comparisons with n-gram based approaches.  
+
+While a complex BRNN model produced very similar results it can be clearly seen that CNN can be used to produce similar results without the additional disadvantages with RNN's for eg. increased training time.   
+
+Additionally the accuracy can be further increased by techniques such as data augmentation and additionally cleaning the input data and normalizing the text.
 
 ### References
 [Convolutional Neural Networks for Sentence Classification](http://www.aclweb.org/anthology/D14-1181)  
