@@ -4,7 +4,7 @@ Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM 
 Using dataset from Kaggle's [Jigsaw Toxic Comment Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
 
 ## Introduction
-AA flurry of content is produced on a daily basis throughout the Internet, on social media sites, blogs, news websites etc from the online interaction be- tween users. While this situation contributes signif- icantly to the quality of human life, unfortunately it involves enormous dangers, since online texts with high toxicity can cause personal attacks, online ha- rassment and bullying behaviors Discussing things you care about can be difficult.   
+A flurry of content is produced on a daily basis throughout the Internet, on social media sites, blogs, news websites etc from the online interaction be- tween users. While this situation contributes signif- icantly to the quality of human life, unfortunately it involves enormous dangers, since online texts with high toxicity can cause personal attacks, online ha- rassment and bullying behaviors Discussing things you care about can be difficult.   
   
 Labeling is a crucial task that has several applications including targeting ”trolls” on forums, preventing bullying on social networks or selecting the most ac- curate comments on a recommendation engine. Au- tomatic abusive language detection is a difficult but important task for online social media. Fighting abu- sive language online is becoming more and more im- portant in a world where social media plays a sig- nificant role in shaping peoples minds (Perse and Lambe, 2016). 
   
