@@ -4,7 +4,13 @@ Text classification using GloVe embeddings, CNN and stacked bi-directional LSTM 
 Using dataset from Kaggle's [Jigsaw Toxic Comment Challenge](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge)  
 
 ## Introduction
-A flood of content is produced on a daily basis throughout the Internet, on social media sites etc from the online interaction between users. While this situation contributes significantly to the quality of human life, unfortunately it involves enormous dangers, since online texts with high toxicity can cause personal attacks, online harassment and bullying behaviors Discussing things you care about can be difficult.   
+AA flurry of content is produced on a daily basis throughout the Internet, on social media sites, blogs, news websites etc from the online interaction be- tween users. While this situation contributes signif- icantly to the quality of human life, unfortunately it involves enormous dangers, since online texts with high toxicity can cause personal attacks, online ha- rassment and bullying behaviors Discussing things you care about can be difficult.   
+  
+Labeling is a crucial task that has several applications including targeting ”trolls” on forums, preventing bullying on social networks or selecting the most ac- curate comments on a recommendation engine. Au- tomatic abusive language detection is a difficult but important task for online social media. Fighting abu- sive language online is becoming more and more im- portant in a world where social media plays a sig- nificant role in shaping peoples minds (Perse and Lambe, 2016). 
+  
+Warner and Hirschberg (2012) and Burnap and Williams (2015) are one of the early researches to use machine learning based classifiers for detect- ing abusive language. Djuric et al., (2015) incor- porated representation word embeddings (Mikolov
+et al., 2013). Nobata et al. (2016) combined pre- defined language elements and word embedding to train a regression model. Waseem (2016) used logis- tic regression with n-grams and user-specific features such as gender and location. Davidson et al. (2017) conducted a deeper investigation on different types of abusive language. Badjatiya et al. (2017) exper- imented with deep learning-based models using en- semble gradient boost classifiers to perform multi- class classification on sexist and racist language. All approaches have been on one step.  
+
 
 ## Purpose
 The purpose of this project is to build models that best classifies the comments into the following categories: toxic, severe\_toxic, obscene, threat, insult, identify\_hate. 
@@ -82,6 +88,17 @@ Predictions complete
 ```
   
 ### BiDirectional LSTM
+Recurrent neural networks (RNN) are networks with loops in them, allowing the persistence of infor- mation. A recurrent neural network can be thought of as multiple copies of the same network, each passing a message to a successor. Long Short Term Memory networks, called LSTMs are a special kind of RNN, capable of learning long-term dependencies. All re- current neural networks have the form of a chain of repeating modules of neural network. In standard RNNs, this repeating module will have a very simple structure, such as a single tanh layer.  
+  
+One appeal for RNNs is that they might be able to connect previous information to the present task, such as previous sentences might help the under- standing of the following sentences. Yet, in reality, it depends. As data length grows, RNNs become unable to learn how to connect information. And this is exactly where Long Short Term Memory neural networks (LSTMs) come on stage. They are ex- plicitly designed to avoid the long-term dependency problem. The code idea behind LSTMs is the cell state, which is more-or-less like a conveyor belt. It goes from end to end of the entire chain, with only some minor linear interactions. Hence, it is very easy for information to just flow along it without being changed.  
+  
+The principle of BiDirectional Recurrent Neural Network (BRNN) is to split the neurons of a regular RNN into two directions, one for positive time direc- tion (forward states), and another for negative time direction (backward states). Those two states output are not connected to inputs of the opposite direction states.  
+states.  
+  
+Here I have used a stacked Bidirectional LSTM with max k-pooling (a fully connected feed forward net- work). The network here has 500 hidden units in the forward and backward LSTM layers. The output of the pooling layer concatenate to a fully-connected layer, while the softmax function is applied on fi- nal layer (which would force the 6 probabilities to add up to 1) with 6 units, which correspond to the predicted probabilities of each of the 6 labels.  
+
+
+
 **Model Graph**
 ![BiDirectional LSTM Model](lstm.png)
 
